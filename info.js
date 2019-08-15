@@ -20,15 +20,12 @@ var data= [
 {"img":"https://imgix.bustle.com/uploads/image/2018/5/12/c058fb74-6fb0-4bfe-9ef4-fecfdb53e05c-fotolia_176371063_subscription_monthly_m.jpg?w=970&h=546&fit=crop&crop=faces&auto=format&q=70","name":"Lindt Hello My Name Is mango Smoothie", "Calories": 210, "Carbs":"22g", "Allergens":"Milk, Lactose, Soya, Wheat", "DietInfo": "Low Sodium, Low Cholesterol" },
 {"img":"https://globalassets.starbucks.com/assets/5f08775ae8654a45a194a464a21170bf.png","name":"Starbucks Coffee Coffee Drink Premium Energy, Cinnamon Dulce", "Calories": 110, "Carbs":"18", "Allergens":"Milk", "DietInfo": "Low Cholesterol, Low Fat, Low Sodium, Low Saturated Fat, Good source of Protein" },
 ]
+//
+// var numval = data["num"];
+//
 
-// var cheetos = $("#0");
-// cheetos.on('click', pickCheetos)
-// function pickCheetos() {
-// event.preventDefault();
-//  console.log("Hello")
   $('article').append(`<img src="${data[0].img}"></img>`)
-  $('article').append(`<p class= "snack-name">${data[0].name}</p>`)
-  $('article').append(`<p class= "snack-cal">Calories: ${data[0].Calories}</p>`)
-  $('article').append(`<p class= "snack-allergen">Allergens: ${data[0].Allergens}</p>`)
-  $('article').append(`<p class= "snack-diet">Diet Info: ${data[0].DietInfo}</p>`)
-//}
+  $('article').append(`<p class= "snack-name"><b>${data[0].name}</b></p>`)
+  $('article').append(`<p class= "snack-cal"><b>Calories: </b>${data[0].Calories}</p>`)
+  $('article').append(`<p class= "snack-allergen"><b>Allergens: </b>${data[0].Allergens}</p>`)
+  $('article').append(`<p class= "snack-diet"><b>Diet Info: </b>${data[0].DietInfo}</p>`)
